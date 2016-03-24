@@ -1,0 +1,737 @@
+
+                         ''~``                          
+                        ( o o )                         
++------------------.oooO--(_)--Oooo.------------------+ 
+|                                                     | 
+|                .-------------------.                | 
+|                | I N D I E  L I B  |                | 
+|                .-------------------.                | 
+|                    .oooO                            | 
+|                    (   )   Oooo.                    | 
++---------------------\ (----(   )--------------------+
+                       \_)    ) /                      
+                             (_/                        
+Indielib version: 0.5.1
+
+[Init time]: (Thrusday, 24 of March 2016)
+
+[20:38:36] [ BEGIN ] -- Creating Render --
+                     {
+[20:38:36] [ BEGIN ]    -- Creating SDL window --
+                        {
+           [  OK   ]       Window created
+           [ INFO  ]       Mode: Full screen
+                        }
+[20:38:40] [  END  ]    Window OK [Elapsed time = 3.711 seg]
+[20:38:40] [ BEGIN ]    -- Initializing Direct3D --
+                        {
+           [  OK   ]       Creating D3D object
+           [  OK   ]       Obtaining the adapter
+           [  OK   ]       Creating the device (D3DCREATE_HARDWARE_VERTEXPROCESSING)
+           [ INFO  ]       Video mode: 800 x 600 x 32
+                        }
+[20:38:40] [  END  ]    Direct3D OK [Elapsed time = 0.228 seg]
+[20:38:40] [ BEGIN ]    -- Hardware information --
+                        {
+           [ INFO  ]       Direct3D version: DXSDK November 2007
+           [ INFO  ]       Mark: ?
+           [ INFO  ]       Chip: Intel(R) HD Graphics Family
+           [ INFO  ]       Primitive antialising (D3DRS_ANTIALIASEDLINEENABLE): No
+           [ INFO  ]       Maximum texture size: 8192 x 8192
+           [ INFO  ]       Vertex Shader: 3 . 0 
+           [ INFO  ]       Pixel Shader: 3 . 0
+                        }
+[20:38:40] [  END  ]    Hardware Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Initializing ImageManager --
+                        {
+           [  OK   ]       Preparing ImageManager
+           [ INFO  ]       Using FreeImage version:  3.15.3
+           [ INFO  ]       Copyright:  This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+                        }
+[20:38:40] [  END  ]    ImageManager Initialised [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Initializing SurfaceManager --
+                        {
+           [  OK   ]       Checking IND_Render
+           [  OK   ]       Checking IND_ImageManager
+                        }
+[20:38:40] [  END  ]    SurfaceManager OK [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Initializing AnimationManager --
+                        {
+           [  OK   ]       SurfaceManager Ok
+           [  OK   ]       ImageManager Ok
+                        }
+[20:38:40] [  END  ]    AnimationManager OK [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Initializing FontManager --
+                        {
+           [  OK   ]       SurfaceManager Ok
+           [  OK   ]       ImageManager Ok
+                        }
+[20:38:40] [  END  ]    FontManager OK [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Initializing Entity2dManager --
+                        {
+           [  OK   ]       Preparing Entity2dManager
+           [  OK   ]        Checking IND_Render
+                        }
+[20:38:40] [  END  ]    Entity2dManager OK [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Loading Image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/1.jpg
+           [ INFO  ]       Extension: jpg
+           [ INFO  ]       Size: 1920 x 1200
+           [ INFO  ]       Bpp: 3
+           [ INFO  ]       Format: IND_RGB
+                        }
+[20:38:40] [  END  ]    Image loaded [Elapsed time = 0.191 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/1.jpg
+           [  OK   ]       Image type converted to 32-bit RGB implicitly.
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 1920 x 1200
+           [ INFO  ]       Block size: 2048 x 2048
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 128 x 848
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.026 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/1.jpg
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0.003 seg]
+[20:38:40] [ BEGIN ]    -- Loading Image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/heart.png
+           [ INFO  ]       Extension: png
+           [ INFO  ]       Size: 358 x 234
+           [ INFO  ]       Bpp: 4
+           [ INFO  ]       Format: IND_RGBA
+                        }
+[20:38:40] [  END  ]    Image loaded [Elapsed time = 0.002 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/heart.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 358 x 234
+           [ INFO  ]       Block size: 512 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 154 x 22
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/heart.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Parsing and loading animation --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master.xml
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master01.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 588 x 299
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.003 seg]
+[20:38:40] [ BEGIN ]       -- Parsing collision file --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master01_collisions.xml
+                           }
+[20:38:40] [  END  ]       Collision file loaded [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master02.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 588 x 299
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.003 seg]
+[20:38:40] [ BEGIN ]       -- Parsing collision file --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master02_collisions.xml
+                           }
+[20:38:40] [  END  ]       Collision file loaded [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master03.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 588 x 299
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.002 seg]
+[20:38:40] [ BEGIN ]       -- Parsing collision file --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master03_collisions.xml
+                           }
+[20:38:40] [  END  ]       Collision file loaded [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master04.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 588 x 299
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.002 seg]
+[20:38:40] [ BEGIN ]       -- Parsing collision file --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master04_collisions.xml
+                           }
+[20:38:40] [  END  ]       Collision file loaded [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master05.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 588 x 299
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.003 seg]
+[20:38:40] [ BEGIN ]       -- Parsing collision file --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master05_collisions.xml
+                           }
+[20:38:40] [  END  ]       Collision file loaded [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master06.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 588 x 299
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.003 seg]
+[20:38:40] [ BEGIN ]       -- Parsing collision file --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master06_collisions.xml
+                           }
+[20:38:40] [  END  ]       Collision file loaded [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master07.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 588 x 299
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.003 seg]
+[20:38:40] [ BEGIN ]       -- Parsing collision file --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/sword_master/sword_master07_collisions.xml
+                           }
+[20:38:40] [  END  ]       Collision file loaded [Elapsed time = 0 seg]
+                        }
+[20:38:40] [  END  ]    Animation parsed and loaded [Elapsed time = 0.02 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/sword_master/sword_master01.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 588 x 299
+           [ INFO  ]       Block size: 1024 x 512
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 436 x 213
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.002 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master/sword_master01.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/sword_master/sword_master02.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 588 x 299
+           [ INFO  ]       Block size: 1024 x 512
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 436 x 213
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.002 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master/sword_master02.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/sword_master/sword_master03.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 588 x 299
+           [ INFO  ]       Block size: 1024 x 512
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 436 x 213
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.002 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master/sword_master03.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/sword_master/sword_master04.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 588 x 299
+           [ INFO  ]       Block size: 1024 x 512
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 436 x 213
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master/sword_master04.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/sword_master/sword_master05.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 588 x 299
+           [ INFO  ]       Block size: 1024 x 512
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 436 x 213
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master/sword_master05.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/sword_master/sword_master06.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 588 x 299
+           [ INFO  ]       Block size: 1024 x 512
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 436 x 213
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master/sword_master06.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/sword_master/sword_master07.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 588 x 299
+           [ INFO  ]       Block size: 1024 x 512
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 436 x 213
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/sword_master/sword_master07.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Parsing and loading animation --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/character2.xml
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_01.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 194
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_02.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 192
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_03.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 188
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_04.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 150 x 186
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_05.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 150 x 188
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_06.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 150 x 192
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_07.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 194
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_08.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 194
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../SpaceGame/resources/animations/stop/Terry_Parado_09.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 192
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[20:38:40] [  END  ]       Image loaded [Elapsed time = 0 seg]
+                        }
+[20:38:40] [  END  ]    Animation parsed and loaded [Elapsed time = 0.006 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_01.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 194
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 62
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_01.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_02.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 192
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 64
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_02.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_03.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 188
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 68
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_03.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_04.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 150 x 186
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 106 x 70
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_04.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_05.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 150 x 188
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 106 x 68
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_05.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_06.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 150 x 192
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 106 x 64
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_06.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_07.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 194
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 62
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_07.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_08.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 194
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 62
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_08.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../SpaceGame/resources/animations/stop/Terry_Parado_09.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 192
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 64
+                        }
+[20:38:40] [  END  ]    Surface created [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../SpaceGame/resources/animations/stop/Terry_Parado_09.png
+                        }
+[20:38:40] [  END  ]    Ok [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 0
+                        }
+[20:38:40] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 1
+                        }
+[20:38:40] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 2
+                        }
+[20:38:40] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 3
+                        }
+[20:38:40] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 4
+                        }
+[20:38:40] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[20:38:40] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 5
+                        }
+[20:38:40] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[20:38:47] [ BEGIN ]    -- Reseting Direct3D --
+                        {
+           [  OK   ]       Obtaining the adapter
+           [ INFO  ]       Video mode: 800 x 600 x 32
+                        }
+[20:38:47] [  END  ]    Direct3D reseted [Elapsed time = 0.094 seg]
+[20:39:06] [ BEGIN ]    -- Finalizing Entity2dManager --
+                        {
+[20:39:06] [ BEGIN ]       -- Freeing 2d entities --
+                           {
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+                           }
+[20:39:06] [  END  ]       Entities freed [Elapsed time = 0 seg]
+                        }
+[20:39:06] [  END  ]    IND_Entity2dManager finalized [Elapsed time = 0.001 seg]
+[20:39:06] [ BEGIN ]    -- Finalizing FontManager --
+                        {
+[20:39:06] [ BEGIN ]       -- Freeing fonts --
+                           {
+                           }
+[20:39:06] [  END  ]       Fonts freed [Elapsed time = 0 seg]
+                        }
+[20:39:06] [  END  ]    FontManager finalized [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]    -- Finalizing AnimationManager --
+                        {
+[20:39:06] [ BEGIN ]       -- Freeing animations --
+                           {
+[20:39:06] [ BEGIN ]          -- Freeing animation --
+                              {
+           [ INFO  ]             Name: ../SpaceGame/resources/animations/sword_master.xml
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0.001 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0.001 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+                              }
+[20:39:06] [  END  ]          Ok [Elapsed time = 0.002 seg]
+[20:39:06] [ BEGIN ]          -- Freeing animation --
+                              {
+           [ INFO  ]             Name: ../SpaceGame/resources/animations/character2.xml
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0.001 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0.001 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[20:39:06] [  END  ]             Ok [Elapsed time = 0 seg]
+                              }
+[20:39:06] [  END  ]          Ok [Elapsed time = 0.002 seg]
+                           }
+[20:39:06] [  END  ]       Animations freed [Elapsed time = 0.004 seg]
+                        }
+[20:39:06] [  END  ]    AnimationManager finalized [Elapsed time = 0.004 seg]
+[20:39:06] [ BEGIN ]    -- Finalizing SurfaceManager --
+                        {
+[20:39:06] [ BEGIN ]       -- Freeing surfaces --
+                           {
+           [ INFO  ]          Freeing surface:           [ INFO  ]          Freeing surface:                           }
+[20:39:06] [  END  ]       Surfaces freed [Elapsed time = 0.001 seg]
+                        }
+[20:39:06] [  END  ]    IND_SurfaceManager finalized [Elapsed time = 0.001 seg]
+[20:39:06] [ BEGIN ]    -- Finalizing ImageManager --
+                        {
+[20:39:06] [ BEGIN ]       -- Freeing images --
+                           {
+                           }
+[20:39:06] [  END  ]       Images freed [Elapsed time = 0 seg]
+                        }
+[20:39:06] [  END  ]    ImageManager finalized [Elapsed time = 0 seg]
+[20:39:06] [ BEGIN ]    -- Finalizing Direct3D --
+                        {
+           [  OK   ]       Finalizing the Device
+           [  OK   ]       Finalizing D3D object
+[20:39:06] [ BEGIN ]       -- Finalizing the window --
+                           {
+                           }
+[20:39:06] [  END  ]       Window finalized [Elapsed time = 0.005 seg]
+                        }
+[20:39:06] [  END  ]    Direct3D finalized  [Elapsed time = 0.013 seg]
